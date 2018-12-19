@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="da">
+	<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Port folio, Multimediedesign">
+	<meta name="description" content="Villiam Fabers portfolio - Multimediedesign">
+	<meta name="author" content="Villiam Faber">
+	<title>Villiam Faber</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+  $('div.dropdown').each(function() {
+    var $dropdown = $(this);
+
+    $("a.dropdown-link", $dropdown).click(function(e) {
+      e.preventDefault();
+      $div = $("div.dropdown-container", $dropdown);
+      $div.toggle();
+      $("div.dropdown-container").not($div).hide();
+      return false;
+    });
+
+});
+    
+  $('html').click(function(){
+    $("div.dropdown-container").hide();
+  });
+});
+		
+	</script>
+	</head>
+
+	<body>
+<nav>
+      <div class="navb">
+    <div class="desktop"> <a href="tricks.html"> Tricks</a> </div>
+    <div class="desktop active"> <a href="om.html">Om</a> </div>
+    <div class="desktop"> <a href="site-dokumentation.html">Site-Dokumentation</a> </div>
+    <div class="desktop"> <a href="index.html"> Port folio</a> </div>
+    <div class="logo"><a href="index.html"><img src="icons/logo2.png" alt=""></a></div>
+    <div id="dropdown-1" class="dropdown dropdown-processed burger"> <a class="dropdown-link" href="#"><img id="burger" src="icons/burger.png" alt="options"></a>
+          <div class="dropdown-container" style="display: none;" >
+        <ul>
+              <li><a href="index.html">Port folio</a></li>
+              <li><a href="site-dokumentation.html">Site-Dokumentation</a></li>
+              <li><a href="om.html">Om</a></li>
+              <li><a href="tricks.html">Tricks</a></li>
+            </ul>
+      </div>
+        </div>
+  </div>
+    </nav>
+		<div>
+			<p>
+			<h1 class="omh1">Villiam Faber - MultimedieDesign-elev i Lyngby (CPH Business Academy)  fra 2018</h1><br>
+			<img src="images/potraet320.png" alt="potrait" class="imgflowx">
+		<img src="images/potraet540.png" alt="potrait" class="img2">
+		<p>
+			<span class="persona-fremh"> Kontakt: <a href="mailto:kontakt@vilifa.com" class="kontakt-om">Kontakt@vilifa.com</a> </span>eller <span class="persona-fremh"><a href="tel:004521624396" class="kontakt-om">Tlf.: +45 21624396 </a></span></p><br>
+				<span class="persona-fremh">Født:</span>1988 (30 år)<br>
+				<span class="persona-fremh">Bopæl:</span> Nærum (opvokset i Kokkedal)<br>
+				<span class="persona-fremh">Erhvevserfaring:</span> Hotel, Salg, Computer-support m.m. <br>
+				<span class="persona-fremh">Uddannelse:</span> HF, Hotel-receptionist og Digital markedsføring (6-ugers kursus) <br>
+				<span class="persona-fremh">Min Virksomhed:</span> <a class="veg" href="https://vegan-wear.dk/" target="_blank">Vegan-Wear.dk (Shopify)</a> <br>
+				<span class="persona-fremh">Sprog:</span> Dansk, Engelsk (og Tysk, men kun mundligt)<br>
+				<span class="persona-fremh">Fritids-interesser:</span> Film og Fodbold
+			</p>
+		</div>
+		<div> <h1 class="omh1"> Hvorfor jeg har valgt at studere Multimedie-design</h1><p class="brottext">Jeg har længe godt kunne tænke mig at lære et håndværk. Mit valg faldt på multimedie-design, da man her udover teori-undervisning også får tilegnet sig tekniske kompetencer. Webudvikling mv. tiltaler mig, da jeg kan se sådanne egenskaber som brugbare og jeg kan lide at arbejde med noget, hvor jeg kan se et konkret resultat af mit arbejde. </p><br></div>
+		<div> <h1 class="omh1"> Hvad jeg kan bidrage med til jeres virksomhed</h1><p class="brottext"> For at være ærlig, så er jeg ikke den store computer-haj. Men jeg vil altid gøre mit bedste og jeg er, efter min egen opfattelse, pligtopfyldende og grundig. Jeg har tidligere arbejdet meget i teams og jeg forsøger altid at bidrage til en proffesionel og hyggelig stemning på min arbejdsplads.</p><br></div>
+		<div> <h1 class="omh1"> Hvad jeg ønsker fra min praktikplads</h1><p class="brottext"> Et sted i nordsjælland eller Kbh ville være ideelt (Jeg har bil). Derudover vil jeg foretrække en mindre virksomhed (&gt;8) og et sted, hvor der er tid til både ny læring og vejledning, udover ens arbejdsopgaver.</p></div>
+	</body>
+</html>

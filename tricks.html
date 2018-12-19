@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="da">
+	<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Port folio, Multimediedesign">
+	<meta name="description" content="Villiam Fabers portfolio - Multimediedesign">
+	<meta name="author" content="Villiam Faber">
+	<title>Villiam Faber</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+  $('div.dropdown').each(function() {
+    var $dropdown = $(this);
+
+    $("a.dropdown-link", $dropdown).click(function(e) {
+      e.preventDefault();
+      $div = $("div.dropdown-container", $dropdown);
+      $div.toggle();
+      $("div.dropdown-container").not($div).hide();
+      return false;
+    });
+
+});
+    
+  $('html').click(function(){
+    $("div.dropdown-container").hide();
+  });
+});
+		
+	</script>
+	</head>
+
+	<body>
+<nav>
+      <div class="navb">
+    <div class="desktop active"> <a href="tricks.html"> Tricks</a> </div>
+    <div class="desktop"> <a href="om.html">Om</a> </div>
+    <div class="desktop"> <a href="site-dokumentation.html">Site-Dokumentation</a> </div>
+    <div class="desktop"> <a href="index.html"> Port folio</a> </div>
+    <div class="logo"><a href="index.html"><img src="icons/logo2.png" alt=""></a></div>
+    <div id="dropdown-1" class="dropdown dropdown-processed burger"> <a class="dropdown-link" href="#"><img id="burger" src="icons/burger.png" alt="options"></a>
+          <div class="dropdown-container" style="display: none;" >
+        <ul>
+              <li><a href="index.html">Port folio</a></li>
+              <li><a href="site-dokumentation.html">Site-Dokumentation</a></li>
+              <li><a href="om.html">Om</a></li>
+              <li><a href="tricks.html">Tricks</a></li>
+            </ul>
+      </div>
+        </div>
+  </div>
+    </nav>
+		<div class="kontakt-div"> <h1><a href="mailto:kontakt@vilifa.com">kontakt@vilifa.com</a></h1>
+		<h1><a href="tel:004521624396">Tlf.: +45 21624396 </a></h1><img class="oldphone" src="images/oldphoneandmail.png" alt="phone and keyboard from https://www.publicdomainpictures.net/en/view-image.php?image=166279&picture=typewriter-and-phone"><img class="imgflowx" src="images/oldphoneandmail320.png" alt="phone and keyboard from https://www.publicdomainpictures.net/en/view-image.php?image=166279&picture=typewriter-and-phone">
+		</div>
+	</body>
+</html>

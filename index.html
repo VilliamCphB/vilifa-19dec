@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="da">
+	<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Port folio, Multimediedesign">
+	<meta name="description" content="Villiam Fabers portfolio - Multimediedesign">
+	<meta name="author" content="Villiam Faber">
+	<title>Villiam Faber</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+  $('div.dropdown').each(function() {
+    var $dropdown = $(this);
+
+    $("a.dropdown-link", $dropdown).click(function(e) {
+      e.preventDefault();
+      $div = $("div.dropdown-container", $dropdown);
+      $div.toggle();
+      $("div.dropdown-container").not($div).hide();
+      return false;
+    });
+
+});
+    
+  $('html').click(function(){
+    $("div.dropdown-container").hide();
+  });
+});
+	</script>
+	</head>
+
+	<body>
+<nav>
+      <div class="navb">
+    <div class="desktop"> <a href="tricks.html"> Tricks</a> </div>
+    <div class="desktop"> <a href="om.html">Om</a> </div>
+    <div class="desktop"> <a href="site-dokumentation.html">Site-Dokumentation</a> </div>
+    <div class="desktop active"> <a href="index.html"> Port folio</a> </div>
+    <div class="logo"><a href="index.html"><img src="icons/logo2.png" alt=""></a></div>
+    <div id="dropdown-1" class="dropdown dropdown-processed burger"> <a class="dropdown-link" href="#"><img id="burger" src="icons/burger.png" alt="options"></a>
+          <div class="dropdown-container" style="display: none;" >
+        <ul>
+              <li><a href="index.html">Port folio</a></li>
+              <li><a href="site-dokumentation.html">Site-Dokumentation</a></li>
+              <li><a href="om.html">Om</a></li>
+              <li><a href="tricks.html">Tricks</a></li>
+            </ul>
+      </div>
+        </div>
+  </div>
+    </nav>
+<div id="baggrund">
+      <div class="button"><a href="#skoleprojekter" >Skoleprojekter &darr;</a></div>
+    </div>
+<div id="skoleprojekter" class="flowdiv">
+      <h2>Flowprojekter på Copenhagen Business Academy, Lyngby, 1. Semester, 2018.</h2>
+     
+      <p>Vi havde 4 større opgaver på 1. semester. Såkaldte flowopgaver, som afslutning på læringflows.</p>
+    </div> 
+<div id="flow1" class="flowdiv">
+      <h3><a href="#flow1" class="aktiv"> Flow 1</a> | <a href="#flow2"> Flow 2</a> | <a href="#flow3"> Flow 3</a> | <a href="#flow4"> Flow 4</a> | <a href="#andet">  Andet</a> |</h3>
+      <p>Vi skulle “drømme” vores port folio og fremstille det i Adobe XD.<img class="imgflowx" src="images/flow1nyrund.PNG" alt="snippet of project 1"><img class="img2" src="images/flow1-500rund.png" alt="snippet of project 1"><br><a href="https://xd.adobe.com/view/3c3899c6-150b-4a20-7c3b-0bc87ba1bba6-4a09/" target="_blank">Flowopgave 1, Prototype lavet i Adobe XD.</a> <h4> Kritik og bearbejdelse</h4></p> <p class="brottext">Jeg fik fin feedback for dette projekt ved den mundtlige fremlæggelse. Jeg har ved eksamensudgaven ændret informationsarkitekturen og forsøgt at have et mere professionelt udtryk, men som dog stadig har et personligt islæt.
+    </p>
+      </div>
+<div id="flow2" class="flowdiv">
+        <h3><a href="#flow1"> Flow 1</a> | <a href="#flow2" class="aktiv"> Flow 2</a> | <a href="#flow3"> Flow 3</a> | <a href="#flow4"> Flow 4</a> | <a href="#andet">  Andet</a> |</h3>
+	<p>I forlængelse af Flowopgave 1 skulle vi nu kode vores port folio for første gang.
+	<img class="imgflowx" src="images/flow2-12decrund.png" alt="Snippet of project 2">
+       <img class="img2" alt="Snippet of project 2" src="images/flow2-12dec540rund.png"><br>
+    <a href="gl.vilifa/index.html" target="_blank">Flowopgave 2, Første udgave af Vilifa.com </a> <br>
+		  </p>
+  
+      <h4>Lærerkritik:</h4>
+      <p class="brottext">"Ok portfolio med forventet indhold. Der sker visuelt lidt for meget forskelligt på siderne, kan du forenkle det lidt? Vær opmærksom på ikke at have så lange tekstlinier (antal tegn): aboutsiden"</p><h5> Konsekvens af kritik</h5><p class="brottext">
+      Jeg har efterfølgende i min fritid arbejdet på sitet, som jeg så igen har ændret her i løbet af eksamensperioden.</p> <a href="vilifa-ny/index.html" target="_blank"> 2. udgave af Vilifa.com (Kun forside).</a>
+	<p class="brottext">
+      Jeg har ved den nuværende udgave af vilifa.com kommet lærerens kritikpunkter i møde og søgt at forenkle det visuelle udtryk og rettet teksten i ”about”(”om”), så den virker mere indbydende og læsbar.
+      </p>
+    </div>
+		<div id="flow3" class="flowdiv">
+		  <h3><a href="#flow1"> Flow 1</a> | <a href="#flow2"> Flow 2</a> | <a href="#flow3" class="aktiv"> Flow 3</a> | <a href="#flow4"> Flow 4</a> | <a href="#andet"> Andet</a> |</h3>
+		<p class="brottext" id="flow3intro-p"> Vi skulle her desinge en prototype til en app vha. Adobe XD.Vi fik 3 valgmuligheder og jeg valgte en sportstracker-app.</p><img id="flow3imgstor" class="img2" alt="Snippet of project 3" src="images/flow3-500rund.png"> <br><p class="brottext"> Kort fortalt, så var formålet ved app'en primært at give et detaljeret overblik over brugerens styrketrænings-pas samt progression inden for de enkelte øvelser. <br> Et vigigt element ved denne opgave var, at teste informationsarkitektur og modtagernes behov for en sådan app.<br>
+		Til opgaven benyttede jeg "Kortsorteringstest", "Tænke-højt-test" og en brugerundersøgelse via "Google Form".</p>
+			<img src="images/flow3nyrund.png" alt="Snippet of project 3" class="imgflowx">
+			<br><a href="https://xd.adobe.com/view/f1b73f73-b24e-4542-5ebe-f456aa2e767a-8786/" target="_blank"><h4> Link til Flow 3 opgave (XD)</h4></a>
+		<h4> Lærerkritik</h4>
+		<p class="brottext">"Meget flot opgave med alle de rigtige ting inkluderet (mangler lige tablet XD link). Du har en god dokumentation som viser fremskridt og proces for hvad du har lavet og et rigtigt godt layout. Overvej om du skulle lave layoutet i skærmformat i stedet, da der ikke er nogen som printer dem ud længere, men den er meget let at læse og overskueligt sat op. Alt dokumentation er lige i skabet og er veludført og det er præcis sådan en opgave skal tilgås. Det er flot at se dine tests og alle resultaterne du er nået til. Særdeles godt at du får lavet flere tests og vedlagt resume af dem. FlowChart er også godt lavet og viser lige de progressioner du vil have brugeren igennem."</p>
+			<h5> Konsekvens af kritik</h5><p class="brottext"> Ved skole-opgaver o.a. der skal afleveres i PDF, vil jeg vælge at displaye dem i skærmformat.</p></div>
+		<div id="flow4" class="flowdiv">  <h3><a href="#flow1"> Flow 1</a> <a href="#flow2"> Flow 2</a><a href="#flow3"> Flow 3</a> <a href="#flow4" class="aktiv"> Flow 4</a>  <a href="#andet">  Andet</a></h3>
+			
+		<p class="brottext"> Gruppeopgaven gik ud på, at vi skulle designe en hjemmeside til det fiktive webberau "Sweetbot" samt designe logo og ikoner til deres nye e-commerce-løsning.</p> <img src="images/flow4nyrund.png" alt="Snippet of project 4" class="imgflowx"><img id="flow4img" class="img2" alt="Snippet of project 4" src="images/flow4-540rund.png"><br>
+		<a  href="sweetbot.design-gruppe-5/index.html" target="_blank"> Vores Flow 4 aflevering</a>
+			<h3>Lærerkritik</h3>
+			<p class="brottext"> Vi fik generelt en god tilbagemelding ved den mundtlige fremlæggeles. Lærene hæftede sig dog ved, at det var lidt af et selvmål, at vælge et politisk ukorrekt billede, som banner, nu hvor "Sweetbot" bl.a. skulle forestille, at være en branding virksomhed.  Derudover havde vi glemt at importere den påkrævede font-type til vores hjemmeside. </p>
+				
+				<h4> Konsekvens af kritk</h4> <p class="brottext">Det nye banner viser et mere afslappet og moderne kontormiljø, og her er ingen belærende mænd og underdanige kvinder.  At den sorte kvinde står i baggrunden, er en politisk ukorrekt bagatel i min optik, som kan misforstås, men kun hvis man har den hensigt på sin agenda. 
+Derudover har jeg i navigationsbaren rettet den understreg, der fejlagtigt indikerede, at man var på ”Om os”-siden, når man var på ”Projekter”-siden, alignet pakke-priserne og importeret ”Lato” skrifttypen i head/index.html.<br><a href="redigeret-sweetbot-eksamen/index.html" target="_blank"> Den redigerede udgave af Flow 4 projektet.</a>
+</p>
+		</div>
+	<div id="andet"><h3><a href="#flow1"> Flow 1</a> | <a href="#flow2"> Flow 2</a> | <a href="#flow3"> Flow 3</a> | <a href="#flow4"> Flow 4</a> | <a href="#andet" class="aktiv">  Andet</a> |</h3>
+	<p> Nedenfor ses andre småopgaver, som vi har lavet på 1. semester</p>
+	<h4>Photoshop:</h4>
+	<p class="brottext"><span class="text-henrik">Til højre i billedet:</span> Moodboard/ alternativt postkort af København.</p><div .andet-2><img class="henrik320" src="images/henrikogmag320rund.png" alt="postcard/moodboard with photoshop">
+	<img id="andet-img-stor" class="img2" src="images/henrikogmag-540rund.png" alt="postcard/moodboard with photoshop"></div>
+	</div><div class="div-ikoner">
+	<h4>Illustrator:</h4>
+		<p>Små ikoner:</p>
+	<img src="images/villiam-icons-01.png" class="ikonbil" alt="image of icons">
+
+		</div>
+	<footer>
+			<p  id="tlf-nr"><a href="tel:004521624396">Tlf.: +45 21624396 </a> </p>
+          <p  id="mail-text"><a href="mailto:kontakt@vilifa.com">Kontakt@vilifa.com</a> </p><div class="icon-parrent">
+          <a href="tel:004521624396"><img class="kontakt-icons" id="kontakt-icon1" src="./icons/tlfvenstre-02.png" alt="phone icon"></a> <a href="mailto:kontakt@vilifa.com"><img class="kontakt-icons" id="kontakt-icon2" src="./icons/mailned-01.png" alt="mail icon"></a></div>
+			
+			<div class="copy" >
+			<p> &copy; All rights reserved</p>
+			</div>
+	</footer>
+</body>
+</html>
